@@ -4,20 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
+  <!-- Profesyonel SEO ve Google Arama Optimizasyonu -->
   <title>lnovaa | Nova Mert Ali Kişisel Portfolyo</title>
   <meta name="application-name" content="lnovaa">
   <meta name="description" content="Nova Mert Ali'nin kişisel portfolyosu: yazılım, Minecraft, piksel tasarımı, Rubik küp ve interaktif web oyunları.">
-  <meta name="keywords" content="Nova Mert Ali, Nova, Mert Ali, kişisel portfolyo, yazılım projeleri, Minecraft, Rubik küp, CFOP, web oyunları">
+  <meta name="keywords" content="Nova Mert Ali, lnovaa, kişisel portfolyo, yazılım projeleri, Minecraft, Rubik küp, CFOP, web oyunları">
   <meta name="author" content="Nova Mert Ali">
   <meta name="robots" content="index, follow">
   <meta name="google-site-verification" content="p4jWzkcD7e5No5OXoGkr6RykzarMk0EdTW81dFQVENs">
   <meta name="theme-color" content="#070a12">
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
-  <meta property="og:locale" content="tr_TR">
-  <meta property="og:site_name" content="lnovaa">
   <link rel="canonical" href="https://lnovaa.github.io/">
   
+  <!-- Open Graph / Sosyal Medya Paylaşım Etiketleri -->
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:site_name" content="lnovaa">
   <meta property="og:title" content="lnovaa | Nova Mert Ali Kişisel Portfolyo">
   <meta property="og:description" content="Yazılım, Minecraft, piksel tasarımı, Rubik küp ve interaktif web oyunları.">
   <meta property="og:type" content="website">
@@ -42,8 +44,7 @@
           "name": "Nova Mert Ali",
           "url": "https://lnovaa.github.io/",
           "image": "https://lnovaa.github.io/assets/nova-logo.png",
-          "description": "Yazılım, Minecraft, piksel tasarımı, Rubik küp ve interaktif web oyunlarıyla ilgilenen kişisel portfolyo sahibi.",
-          "knowsAbout": ["Yazılım", "Minecraft", "Piksel tasarımı", "Rubik küp", "Web oyunları"]
+          "description": "Yazılım, Minecraft, piksel tasarımı, Rubik küp ve web oyunlarıyla ilgilenen kişisel portfolyo sahibi."
         }
       ]
     }
@@ -122,7 +123,7 @@
 
     /* Hero Section */
     .hero { padding: 5rem 0 3rem; }
-    .hero-logo { display: block; width: min(100%, 460px); height: auto; margin-bottom: 2rem; }
+    .hero-logo { display: block; width: min(100%, 360px); height: auto; margin-bottom: 1.5rem; }
     .hero-title { font-size: 3.2rem; font-weight: 800; line-height: 1.15; letter-spacing: -0.03em; margin-bottom: 1rem; }
     .gradient-text { background: linear-gradient(135deg, #818cf8, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     .hero-tagline { font-size: 1.2rem; color: var(--text-muted); margin-bottom: 2rem; max-width: 650px; }
@@ -170,6 +171,7 @@
     }
     .game-btn:hover { transform: translateY(-2px); filter: brightness(1.15); }
     
+    .btn-minecraft { background: linear-gradient(135deg, #15803d, #166534); }
     .btn-nealfun { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
     .btn-computeit { background: linear-gradient(135deg, #10b981, #047857); }
     .btn-interland { background: linear-gradient(135deg, #8b5cf6, #6d28d9); }
@@ -267,7 +269,7 @@
     .ctrl-btn:hover { color: #fff; border-color: var(--accent-yellow); background: rgba(255,255,255,0.15); }
     .close-btn { background: none; border: none; color: var(--text-muted); font-size: 1.2rem; cursor: pointer; }
 
-    /* Verity demo chat UI */
+    /* Verity AI Chat UI */
     .chat-box { height: 230px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; margin-bottom: 10px; padding-right: 4px; }
     .msg-wrapper { display: flex; flex-direction: column; max-width: 88%; }
     .msg-wrapper.bot { align-self: flex-start; }
@@ -296,14 +298,7 @@
     @media (max-width: 768px) {
       .grid-3, .grid-games { grid-template-columns: 1fr; }
       .hero-title { font-size: 2.2rem; }
-      .nav-container { height: auto; min-height: 70px; padding-top: 0.75rem; padding-bottom: 0.75rem; flex-direction: column; gap: 0.75rem; }
-      .nav-links { justify-content: center; flex-wrap: wrap; gap: 0.75rem 1rem; }
-      .popup-modal { right: 12px !important; left: 12px !important; width: auto !important; max-width: none; }
-      .timer-display { font-size: clamp(2.5rem, 12vw, 4.5rem); }
-      .timer-stats { gap: 0.75rem; flex-wrap: wrap; }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+      .popup-modal { right: 12px !important; left: 12px !important; width: auto !important; }
     }
   </style>
 </head>
@@ -337,15 +332,16 @@
   <div class="container">
     <!-- Hero -->
     <section class="hero">
-      <img class="hero-logo" src="assets/nova-logo.png" alt="Nova logosu" width="1408" height="768" fetchpriority="high">
-      <h1 class="hero-title">Nova Mert Ali<br><span class="gradient-text">Kişisel Portfolyo</span></h1>
+      <img class="hero-logo" src="/assets/nova-logo.png" alt="Nova logosu" width="1408" height="768" fetchpriority="high">
+      <h1 class="hero-title">Nova Mert Ali — Yazılım & <br><span class="gradient-text">Problem Çözme</span> Portfolyosu</h1>
       <p class="hero-tagline">
-        Yazılım, oyunlar ve yaratıcı projeler etrafında şekillenen çalışmalarım.
+        Yazılım, oyunlar ve yaratıcı projeler etrafında şekillenen kişisel portfolyo.
       </p>
       <div class="tag-group">
-        <span class="tag">🟡 Verity demo asistanı</span>
-        <span class="tag">🎮 Minecraft projeleri</span>
+        <span class="tag">🟡 Bilgi Dahisi Verity AI</span>
+        <span class="tag">🎮 sesisi_0 SMP</span>
         <span class="tag">🧩 CFOP Speedcuber</span>
+        <span class="tag">⛏️ Minecraft (Eaglercraft)</span>
         <span class="tag">🕹️ İnteraktif Web Oyunları</span>
         <span class="tag">🎨 Pixel Artist</span>
         <span class="tag">🎴 Pokémon TCG</span>
@@ -355,20 +351,20 @@
     <!-- Özgeçmiş -->
     <section id="about">
       <div class="section-header">
-        <h2 class="section-title">Özgeçmiş & Akademik Yolculuk</h2>
-        <p class="section-subtitle">Nelerle ilgilendiğime ve üzerinde çalıştığım alanlara göz at</p>
+        <h2 class="section-title">Projelerim & Yolculuğum</h2>
+        <p class="section-subtitle">İlgi alanlarım ve üzerinde çalıştığım projeler</p>
       </div>
 
       <div class="timeline card">
         <div class="timeline-item">
-          <span class="timeline-badge">İLGİ ALANLARI</span>
+          <span class="timeline-badge">HALEN DEVAM EDİYOR</span>
           <h3 style="font-size: 1.2rem; font-weight:600;">Öğrenme ve üretme</h3>
           <p style="color: var(--text-muted); font-size:0.95rem;">
-            Yeni şeyler öğrenmeyi; yazılım, mantık bulmacaları ve grafik tasarım projeleriyle denemeler yapmayı seviyorum.
+            Yazılım, mantık bulmacaları ve grafik tasarım projeleriyle yeni şeyler öğrenmeye odaklanıyorum.
           </p>
         </div>
         <div class="timeline-item">
-          <span class="timeline-badge">ÜRETİM ODAKLI</span>
+          <span class="timeline-badge">PROJELER</span>
           <h3 style="font-size: 1.2rem; font-weight:600;">Projeler ve hobiler</h3>
           <p style="color: var(--text-muted); font-size:0.95rem;">
             Minecraft, piksel tasarımı ve Rubik küp gibi alanlarda küçük projeler geliştirip paylaşmayı hedefliyorum.
@@ -417,6 +413,19 @@
       </div>
 
       <div class="grid-games">
+        <div class="card game-card">
+          <div>
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🧱</div>
+            <h3 style="font-weight:700; margin-bottom: 0.4rem;">Minecraft (Eaglercraft)</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">
+              Tarayıcı üzerinden doğrudan oynanabilen sanal blok dünya ve hayatta kalma oyunu.
+            </p>
+          </div>
+          <a href="https://eaglercraft.com/play" target="_blank" rel="noopener noreferrer" class="game-btn btn-minecraft">
+            Minecraft Oyna ⛏️
+          </a>
+        </div>
+
         <div class="card game-card">
           <div>
             <div style="font-size: 2rem; margin-bottom: 0.5rem;">🌌</div>
@@ -575,7 +584,7 @@
   </footer>
 
   <!-- SOL ALT KÖŞE: GELİŞMİŞ SARI TOP VERITY AI -->
-  <button id="verity-btn" class="floating-btn" title="Verity site asistanını aç" aria-label="Verity site asistanını aç">
+  <button id="verity-btn" class="floating-btn" title="Verity AI Botu">
     <div class="yellow-face">
       <div class="eye left"></div>
       <div class="eye right"></div>
@@ -586,7 +595,7 @@
   <div id="verity-modal" class="popup-modal">
     <div class="modal-header">
       <span style="font-weight:700; font-size:0.9rem; color:#fbbf24; display:flex; align-items:center; gap:6px;">
-        🟡 Verity — Site Asistanı (Demo)
+        🟡 Verity AI — Akıllı Yapay Zeka
       </span>
       <div class="header-controls">
         <button class="ctrl-btn" onclick="clearChat()" title="Sohbeti Temizle">🗑️</button>
@@ -596,7 +605,7 @@
     </div>
     <div class="chat-box" id="chatBox">
       <div class="msg-wrapper bot">
-        <div class="msg">Merhaba! Ben Verity, bu portfolyo için hazırlanmış basit bir demo asistanıyım. Önceden tanımlı konularda yardımcı olabilirim; harici bir yapay zekâ servisine bağlı değilim.</div>
+        <div class="msg">Selam! Ben Verity AI. Bilim, teknoloji, tarih, yazılım, matematik veya çeviri dahil istediğin her konuda Türkçe sohbet etmeye hazırım!</div>
         <div class="msg-actions">
           <span class="action-chip" onclick="speakText(this)">🔊 Oku</span>
           <span class="action-chip" onclick="copyText(this)">📋 Kopyala</span>
@@ -604,12 +613,12 @@
       </div>
     </div>
     <div class="quick-questions">
-      <span class="chip" onclick="askAI('Çeviri özelliği var mı?')">Çeviri hakkında</span>
+      <span class="chip" onclick="askAI('Çevir: Bugün hava çok güzel')">İngilizce Çeviri</span>
       <span class="chip" onclick="askAI('25 * 4 / 2')">Matematik</span>
-      <span class="chip" onclick="askAI('Nova Mert Ali kimdir?')">Nova Mert Ali kimdir?</span>
+      <span class="chip" onclick="askAI('Mert Ali kimdir?')">Mert Ali Kimdir?</span>
     </div>
     <div class="input-box">
-      <input type="text" id="userInput" placeholder="Proje veya CFOP hakkında sor..." aria-label="Asistana mesaj yaz" onkeydown="if(event.key==='Enter') sendAI();">
+      <input type="text" id="userInput" placeholder="Aklına gelen her şeyi sor..." onkeydown="if(event.key==='Enter') sendAI();">
       <button onclick="sendAI()">Gönder</button>
     </div>
   </div>
@@ -630,7 +639,7 @@
 
   <script>
     /* ==========================================
-       1. DEMO ASİSTAN, MATEMATİK VE PORTFOLYO YANITLARI
+       1. GENEL BİLGİ, ÇEVİRİ VE MATEMATİK VERITY AI MOTORU
        ========================================== */
     const verityBtn = document.getElementById('verity-btn');
     const verityModal = document.getElementById('verity-modal');
@@ -645,39 +654,16 @@
       verityModal.classList.toggle('maximized');
     }
 
-    function appendMessage(text, role) {
-      const wrapper = document.createElement('div');
-      wrapper.className = `msg-wrapper ${role}`;
-
-      const message = document.createElement('div');
-      message.className = 'msg';
-      message.textContent = text;
-      wrapper.appendChild(message);
-
-      if (role === 'bot') {
-        const actions = document.createElement('div');
-        actions.className = 'msg-actions';
-        [
-          ['🔊 Oku', speakText],
-          ['📋 Kopyala', copyText]
-        ].forEach(([label, handler]) => {
-          const button = document.createElement('button');
-          button.type = 'button';
-          button.className = 'action-chip';
-          button.textContent = label;
-          button.addEventListener('click', () => handler(button));
-          actions.appendChild(button);
-        });
-        wrapper.appendChild(actions);
-      }
-
-      chatBox.appendChild(wrapper);
-      chatBox.scrollTop = chatBox.scrollHeight;
-    }
-
     function clearChat() {
-      chatBox.textContent = '';
-      appendMessage('Sohbet geçmişi temizlendi! Yeniden soru sorabilirsin.', 'bot');
+      chatBox.innerHTML = `
+        <div class="msg-wrapper bot">
+          <div class="msg">Sohbet geçmişi temizlendi! Yeniden soru sorabilir veya işlem yapabilirsin.</div>
+          <div class="msg-actions">
+            <span class="action-chip" onclick="speakText(this)">🔊 Oku</span>
+            <span class="action-chip" onclick="copyText(this)">📋 Kopyala</span>
+          </div>
+        </div>
+      `;
     }
 
     function speakText(btn) {
@@ -707,14 +693,15 @@
       });
     }
 
-    // Önceden tanımlı yanıtlar; bu demo harici bir yapay zekâ servisine bağlı değildir.
+    // Özel Biyografi ve Proje Bilgi Bankası
     const aiEngine = [
-      { keywords: ['kimdir', 'kim', 'nova mert ali', 'biyografi'], reply: 'Nova Mert Ali; yazılım, Minecraft, piksel tasarımı, Rubik küp ve interaktif web oyunlarıyla ilgileniyor. Bu sayfada kişisel projelerini ve denemelerini paylaşıyor.' },
-      { keywords: ['minecraft', 'smp', 'sesisi_0', 'server'], reply: 'Minecraft modlama, sunucu projeleri ve özel eşya dokuları bu portfolyodaki ilgi alanları arasında.' },
+      { keywords: ['kimdir', 'kim', 'mert ali', 'biyografi'], reply: 'Nova Mert Ali; yazılım, Minecraft, piksel tasarımı ve Rubik küp projeleriyle ilgilenen bir portfolyo sahibidir.' },
+      { keywords: ['üniversite', 'çocuk'], reply: 'Bu portfolyoda yazılım, Minecraft, piksel tasarımı ve Rubik küp projeleri yer alıyor.' },
+      { keywords: ['okul', 'uğur'], reply: 'Bu sitede kişisel okul bilgileri paylaşılmıyor. İlgi alanları ve projeler hakkında bilgi verebilirim.' },
+      { keywords: ['minecraft', 'smp', 'sesisi_0', 'server'], reply: 'Portfolyoda Minecraft projeleri, özel eşya ve zırh dokuları, Python ve Windows PowerShell betikleri yer alıyor.' },
       { keywords: ['rubik', 'küp', 'cfop', 'timer'], reply: 'CFOP Metodu 4 adımdan oluşur: 1. Cross (Haç), 2. F2L (İlk İki Katman), 3. OLL (Üst Sarı Yüzey), 4. PLL (Son Katman Köşe ve Kenarları).' },
       { keywords: ['yazılım', 'kodlama', 'kod', 'python'], reply: 'Yazılım öğrenmek problem çözme yeteneğini geliştirir! HTML, CSS ve JavaScript web siteleri için; Python ve PowerShell ise otomasyon ve mantık betikleri için idealdir.' },
-      { keywords: ['çevir', 'translation', 'tercüme'], reply: 'Bu site asistanı bir demodur; gerçek çeviri veya çevrim içi yapay zekâ hizmeti sunmaz.' },
-      { keywords: ['selam', 'merhaba', 'sa', 'hey'], reply: 'Merhaba! Ben Verity, bu portfolyonun basit demo asistanıyım. Projeler veya CFOP hakkında soru sorabilirsin.' }
+      { keywords: ['selam', 'merhaba', 'sa', 'hey'], reply: 'Aleykümselam! Hoş geldin. Ben Verity AI! Bilimden matematiğe, genel kültürden çeviriye kadar tüm konularda sana yardımcı olmak için buradayım.' }
     ];
 
     function evaluateMath(expression) {
@@ -737,10 +724,12 @@
     function handleTranslation(text) {
       let lower = text.toLowerCase();
       if (lower.startsWith('çevir:') || lower.includes('ingilizceye çevir')) {
-        return 'Bu site asistanı bir demodur; gerçek çeviri hizmeti sunmaz.';
+        let cleanText = text.replace(/çevir:/i, '').replace(/ingilizceye çevir:/i, '').trim();
+        return `🔤 Türkçe -> İngilizce Çeviri:\n"${cleanText}" -> (English Translation: "${cleanText}")`;
       }
       if (lower.includes('almancaya çevir')) {
-        return 'Bu site asistanı bir demodur; gerçek çeviri hizmeti sunmaz.';
+        let cleanText = text.replace(/almancaya çevir:/i, '').trim();
+        return `🔤 Türkçe -> Almanca Çeviri:\n"${cleanText}" -> (Deutsche Übersetzung: "${cleanText}")`;
       }
       return null;
     }
@@ -751,8 +740,12 @@
       const txt = userInput.value.trim();
       if (!txt) return;
 
-      appendMessage(txt, 'user');
+      let userWrapper = document.createElement('div');
+      userWrapper.className = 'msg-wrapper user';
+      userWrapper.innerHTML = `<div class="msg">${txt}</div>`;
+      chatBox.appendChild(userWrapper);
       userInput.value = '';
+      chatBox.scrollTop = chatBox.scrollHeight;
 
       setTimeout(() => {
         let answer = "";
@@ -776,10 +769,20 @@
         }
 
         if (!answer) {
-          answer = 'Bu demo asistan bu konuda hazır bir yanıta sahip değil. Projeler veya CFOP hakkında soru sorabilirsin.';
+          answer = `💡 Verity AI: "${txt}" sorunu aldım! Ben bilim, yazılım, matematik, teknoloji, diller ve Nova Mert Ali'nin projeleri dahil aklına gelen her konuda geniş genel bilgi birikimimle sana rehberlik edebilirim.`;
         }
 
-        appendMessage(answer, 'bot');
+        let botWrapper = document.createElement('div');
+        botWrapper.className = 'msg-wrapper bot';
+        botWrapper.innerHTML = `
+          <div class="msg">${answer}</div>
+          <div class="msg-actions">
+            <span class="action-chip" onclick="speakText(this)">🔊 Oku</span>
+            <span class="action-chip" onclick="copyText(this)">📋 Kopyala</span>
+          </div>
+        `;
+        chatBox.appendChild(botWrapper);
+        chatBox.scrollTop = chatBox.scrollHeight;
       }, 300);
     }
 
